@@ -36,10 +36,34 @@ function calcular() {
     let hexadecimal = numeroI.toString(16);
     resultado.value = hexadecimal;
   } else if (operacionI == 4) {
-    let decimal = numeroI.parseInt(dato.value, 2);
-    resultado.value = decimal;
+    numeroI = numeroI.toString(10);
+    for (var i = 0; i < numeroI.length; i++) {
+      let character = numeroI.charAt(i);
+      if (character != 0 && character != 1) {
+        resultado.value = 0;
+      }
+    }
+    numeroI = parseInt(dato.value, 2);
+    resultado.value = numeroI;
   } else if (operacionI == 5) {
-    let decimal = numeroI.parseInt(dato.value, 8);
-    resultado.value = decimal;
+    numeroI = numeroI.toString(10);
+    for (var i = 0; i < numeroI.length; i++) {
+      let character = numeroI.charAt(i);
+      if (character != 0 && character != 1) {
+        resultado.value = 0;
+      }
+    }
+    numeroI = parseInt(dato.value, 8);
+    resultado.value = numeroI;
+  } else {
+    numeroI = numeroI.toString(10);
+    for (var i = 0; i < numeroI.length; i++) {
+      let character = numeroI.charAt(i);
+      if (character != 0 && character != 1) {
+        resultado.value = 0;
+      }
+    }
+    numeroI = parseInt(dato.value, 16);
+    resultado.value = numeroI;
   }
 }
