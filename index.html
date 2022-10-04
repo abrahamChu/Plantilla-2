@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Ejemplo de HTML5">
+  <meta name="keywords" content="HTML5, CSS3, JavaScript">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <link rel="shortcut icon" href="./imagenes/Logo.png">
+  <title>Tarea 5</title>
+  <link rel="stylesheet" href="./css/plantilla.css">
+  <script src="js/funciones.js" defer></script> <!--El defer hace que el script del .js se carge lo último ya que no nos interesa que se carge antes.-->
+</head>
+
+<body>
+  <div id="contenedor">
+    <header id="cabecera">
+
+      
+        <picture style="margin: 5px;">
+          <source media="(min-width: 500px)" srcset="imagenes/LogoPlantilla.png">
+          <img id="imagenTitulo" src="imagenes/Logop.png" alt="Logo CIFP">
+        </picture>
+        <h1 id="titulo">Conversión de Números</h1>
+
+      
+    </header>
+    <nav id="menu">
+      <input type="checkbox" id="menuopciones">
+      <label for="menuopciones"> ☰ </label>    
+      <ul>
+        <li>Principal</li>
+        <li>Fotos</li>
+        <li>Videos</li>
+        <li>Contacto</li>
+      </ul>
+
+    </nav>
+    <section id="seccion">
+      <article>
+        <header>
+          <hgroup>
+            <h1>Selecciona la operación a realizar</h1>
+          </hgroup>
+          <time datetime="2022-10-04" pubdate>publicado 04-10-2022
+          </time>
+        </header>
+        <p>Introduce el nº a convertir</p>
+        <input type="text" id="dato"/>
+      </br>
+      <select id="operacion">
+        <optgroup label="De DECIMAL a">
+            <option value="1">  Binario</option> 
+            <option value="2">  Octal</option> 
+            <option value="3">  Hexadecimal</option> 
+        </optgroup>
+        <optgroup label="De  tipo  a DECIMAL">
+            <option value="4">Binario  </option> 
+            <option value="5">Octal </option> 
+            <option value="6">Hexadecimal  </option> 
+        </optgroup>
+    </select>
+      <p>Resultado</p>
+        <input type="text" id = "resultado"/>
+
+        <footer>
+          <p>comentarios (0)</p>
+        </footer>
+      </article>
+    </section>
+
+    <aside id="columna">
+      <blockquote>Mensaje número uno</blockquote>
+      <blockquote>Mensaje número dos</blockquote>
+    </aside>
+
+    <footer id="pie">
+      Desarrollo de Aplicaciones Web(DAW) © CIFP Santa Catalina
+    </footer>
+  </div>
+</body>
+
+</html>
