@@ -36,11 +36,9 @@ function calcular() {
     let hexadecimal = numeroI.toString(16);
     resultado.value = hexadecimal;
   } else if (operacionI == 4) {
-    numeroI = parseInt(dato.value);
     let decimal = numeroI.parseInt(dato.value, 2);
     resultado.value = decimal;
-  } else if (operacionI == 5){
-    numeroI = parseInt(dato.value);
+  } else if (operacionI == 5) {
     let decimal = numeroI.parseInt(dato.value, 8);
     resultado.value = decimal;
   }
