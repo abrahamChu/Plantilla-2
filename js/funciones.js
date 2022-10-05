@@ -39,25 +39,25 @@ function calcular() {
   /*Funcion de pasar de numero Binario a decimal*/
   } else if (operacionI == 4) {
     numeroI = numeroI.toString(10);
-    for (var i = 0; i < numeroI.length; i++) {
+    for (var i = 0; i < numeroI.length; i++) {//Recorre el numero que hemos ingresado.
       let character = numeroI.charAt(i);
-      if (character != 0 && character != 1) {
-        resultado.value = 0;
+      if (character != 0 && character != 1) {//De cada uno de los caracteres del numero, comprobamos si estos son 0 o 1 y sino lo son el resultado es null.
+        resultado.value = null;
       }
     }
-    numeroI = parseInt(dato.value, 2);
+    numeroI = parseInt(dato.value, 2);//Convierte binario en numero decimal.
     resultado.value = numeroI;
 
   /*Funcion de pasar de numero Octal a decimal */
   } else if (operacionI == 5) {
     numeroI = numeroI.toString(10);
-    numeroI = parseInt(dato.value, 8);
+    numeroI = parseInt(dato.value, 8);//Convierte octal en numero decimal.
     resultado.value = numeroI;
 
   /*Funcion de pasar de numero Hexadecimal a decimal*/
   } else {
     numeroI = numeroI.toString(10);
-    numeroI = parseInt(dato.value, 16);
+    numeroI = parseInt(dato.value, 16);//Convierte hexadecimal en numero decimal.
     resultado.value = numeroI;
   }
 }
