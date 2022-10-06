@@ -1,24 +1,6 @@
 let numeroI = 0;
 let resultadoI = 0;
 let operacionI = 0;
-/*let lista = document.getElementById("operacion")*/ //Obtengo el id operacion del html y lo introduzco en la variable lista
-
-/*Cuando tu en la lista haces un cambio de valor, en este caso ir cambiando entre las distintas opciones de tipos de datos la funcion calcula() nos manda un mensaje con el cambio*/
-
-//Opcion mas larga
-/*let lista = document.getElementById("operacion")
-operacion.addEventListener("change", calcular, false);
-function calcular(event){
-    operacionI = event.target.value;
-    alert(operacionI)
-}*/
-
-//Opcion simplificada.
-/*operacion.addEventListener("change", calcular, false);
-function calcular(){
-    operacionI = operacion.value;
-    alert(operacionI)
-}*/
 
 operacion.addEventListener("change", calcular, false);
 function calcular() {

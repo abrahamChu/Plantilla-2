@@ -8,72 +8,76 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
   <link rel="shortcut icon" href="./imagenes/Logo.png">
-  <title>Tarea 5</title>
+  <title>Conversor de Tipos</title>
   <link rel="stylesheet" href="./css/plantilla.css">
   <script src="js/funciones.js" defer></script> <!--El defer hace que el script del .js se carge lo último ya que no nos interesa que se carge antes.-->
 </head>
 
 <body>
   <div id="contenedor">
-    <header id="cabecera">
-
-      
-        <picture style="margin: 5px;">
-          <source media="(min-width: 500px)" srcset="imagenes/LogoPlantilla.png">
-          <img id="imagenTitulo" src="imagenes/Logop.png" alt="Logo CIFP">
-        </picture>
-        <h1 id="titulo">Conversión de Números</h1>
-
-      
+    <header id="cabecera"> 
+    <h1 id="titulo">Decimal, Binario, Octal y Hexadecimal</h1>
     </header>
-    <nav id="menu">
-      <input type="checkbox" id="menuopciones">
-      <label for="menuopciones"> ☰ </label>    
-      <ul>
-        <li>Principal</li>
-        <li>Fotos</li>
-        <li>Videos</li>
-        <li>Contacto</li>
-      </ul>
 
+    <nav id="nav">
+      <p><a href="https://www.google.com/">Cerrar Navegador</a></p>
     </nav>
-    <section id="seccion">
-      <article>
-        <header>
-          <hgroup>
-            <h1>Selecciona la operación a realizar</h1>
-          </hgroup>
-          <time datetime="2022-10-04" pubdate>publicado 04-10-2022
-          </time>
-        </header>
-        <p>Introduce el nº a convertir</p>
-        <input type="text" id="dato"/>
-      </br>
-      <select id="operacion">
-        <optgroup label="De DECIMAL a">
-            <option value="1">Binario</option> 
-            <option value="2">Octal</option> 
-            <option value="3">Hexadecimal</option> 
-        </optgroup>
-        <optgroup label="De  tipo  a DECIMAL">
-            <option value="4">Binario  </option> 
-            <option value="5">Octal </option> 
-            <option value="6">Hexadecimal  </option> 
-        </optgroup>
-    </select>
-      <p>Resultado</p>
-        <input type="text" id = "resultado"/>
+    
 
-        <footer>
-          <p>comentarios (0)</p>
-        </footer>
-      </article>
+    <section id="seccion">
+      <p style="color:aqua;"><i>Conversión de Tipos</i></p>
+    </section>
+      
+    <section id="seccion2">
+      <h1>Conversión entre sistemas de numeración</h1>
+    </br>
+      <p>Numero: <input type="text" id="dato"/></p> 
+    </br>
+    <div>
+    <select id="operacion">
+      <optgroup label="De DECIMAL a">
+          <option value="1">Binario</option> 
+          <option value="2">Octal</option> 
+          <option value="3">Hexadecimal</option> 
+      </optgroup>
+      <optgroup label="De  tipo  a DECIMAL">
+          <option value="4">Binario  </option> 
+          <option value="5">Octal </option> 
+          <option value="6">Hexadecimal  </option> 
+      </optgroup>
+    </select>
+    </div>
+  </br>
+</br>
+</br>
+</br>
+    <p>Resultado</p>
+      <input type="text" id = "resultado"/>
     </section>
 
     <aside id="columna">
-      <blockquote>Mensaje número uno</blockquote>
-      <blockquote>Mensaje número dos</blockquote>
+      <p align="center"><b>JavaScript trabaja con los siguientes tipos de datos:</b></p>
+      <ul>
+        <li>Number</li>
+        <li>Boolean</li>
+        <li>String</li>
+        <li>Undefined</li>
+        <li>Objetos</li>
+      </ul>
     </aside>
+
+    <aside id="columna2">
+      <p align="center"><b>Conversion de tipos</b></p>
+      <ul>
+        <ol>Automaticas</ol>
+        <ol>parseInt</ol>
+        <ol>parseFloat</ol>
+        <ol>numero.toFixed(n)</ol>
+        <ol>numero.toExponential(n)</ol>
+        <ol>numero.toString(base)</ol>
+      </ul>
+    </aside>
+    
 
     <footer id="pie">
       Desarrollo de Aplicaciones Web(DAW) © CIFP Santa Catalina
